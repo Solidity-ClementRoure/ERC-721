@@ -22,7 +22,7 @@ Your objective is to gather as many TD-ERC721-101 points as possible. Please not
 - Clone the repo on your machine
 - Install the required packages `npm install truffle`, `npm install @openzeppelin/contracts@3.4.1` , `npm install @truffle/hdwallet-provider`
 - Copy the content of `example-truffle-config.js` to your truffle config
-- Configure a seed for deployment of contracts in your truffle config
+- Configure a private key for deployment of contracts in your truffle config
 - Register for an infura key and set it up in your truffle config
 - Download and launch Ganache
 - Test that you are able to connect to the ganache network with `truffle console`
