@@ -6,3 +6,4 @@ package.json
 .secret
 
 /build
+build/*
