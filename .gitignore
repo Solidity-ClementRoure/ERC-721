@@ -3,3 +3,6 @@ node_modules
 *2_td_test.js*
 package-lock.json
 package.json
+.secret
+
+/build
