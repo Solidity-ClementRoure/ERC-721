@@ -77,7 +77,7 @@ contract Evaluator
 		// Checking a solution was submitted
 		require(exerciceProgression[msg.sender][0], "No solution submitted");
 
-		// Retrieve expected characteristics
+		// Retrieve expected characteristics  -> Noms aleatoires
 		string memory name = readName(msg.sender);
 		bool wings = readWings(msg.sender);
 		uint legs = readLegs(msg.sender);
@@ -89,6 +89,7 @@ contract Evaluator
 		// Check that properties are visible 
 		(string memory _name, bool _wings, uint _legs, uint _sex) = studentExerciceSolution[msg.sender].getAnimalCharacteristics(animalNumber);
 		require(_compareStrings(name,_name) && (wings == _wings) && (legs == _legs) && (sex == _sex), "Created animal doesn't have correct characteristics");
+
 
 		// Crediting points
 		if (!exerciceProgression[msg.sender][2])
